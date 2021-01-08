@@ -1,0 +1,91 @@
+.articleDashboard {
+    position: absolute;
+    z-index: 1;
+    width: 639px;
+    height: 500px;
+    top: 50px;
+    left: 161px;
+    background: #fff;
+    overflow-y: auto;
+    display: none;
+}
+
+.articleList img:hover {
+    border: 2px solid #e6245a;
+    cursor: pointer;
+}
+
+.articleList img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #fff;
+}
+
+.articlecNavbar {
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+    width: 86%;
+    margin: 50px auto;
+    margin-bottom: 0;
+}
+
+.articlecNavbar li {
+    width: 69px;
+    float: left;
+    height: 38px;
+    text-align: center;
+    margin-left: 80px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.articlecNavbar li:hover {
+    font-weight: bold;
+}
+
+.articlecNavbar .selectedNavbar {
+    border-bottom: 3px solid #e6245a !important;
+    font-weight: bold;
+}
+
+.articleDashboard .articleSearch {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 24px;
+    height: 23px;
+    outline: none;
+    border: 1px solid #cccccc;
+    padding-left: 5px;
+}
+
+.articleDashboard .articleList li {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 45px;
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.folderTitle {
+    position: absolute;
+    top: 122px;
+    background: #fff;
+    opacity: 0.7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    left: 2px;
+}

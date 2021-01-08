@@ -1,0 +1,108 @@
+.dashboard {
+    position: absolute;
+    z-index: 1;
+    width: 639px;
+    height: 500px;
+    top: 50px;
+    left: 161px;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.oneFolder {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 45px;
+    list-style-type: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.oneFolder img {
+    border: 2px solid #fff;
+}
+
+.oneFolder img:hover {
+    border: 2px solid #e6245a;
+    cursor: pointer;
+}
+
+.musicNavbar {
+    height: 75px;
+    border-bottom: 1px solid #cccccc;
+    width: 86%;
+    margin: 0 auto;
+}
+
+.musicNavbar li {
+    width: 69px;
+    float: left;
+    height: 41px;
+    margin-top: 32px;
+    text-align: center;
+    margin-left: 80px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.musicNavbar li:hover {
+    font-weight: bold;
+}
+
+.musicNavbar .selectedNavbar {
+    border-bottom: 3px solid #e6245a !important;
+    font-weight: bold;
+}
+
+.musicPagination {
+    display: flex;
+    height: 30px;
+    /* background: red; */
+    padding-top: 30px;
+    width: 80%;
+    margin-bottom: 30px;
+    padding-left: 35px;
+}
+
+.musicPagination li {
+    width: 25px;
+    background: #cccccc;
+    list-style-type: none;
+    height: 25px;
+    margin-left: 10px;
+    line-height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.musicPagination li:hover {
+    background: #ff6a93;
+    color: #fff;
+}
+
+.musicPagination .musicCurrentPage {
+    background: #e6245a !important;
+    color: #fff;
+}
+
+.folderTitle {
+    position: absolute;
+    top: 122px;
+    background: #fff;
+    opacity: 0.7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+    left: 2px;
+}

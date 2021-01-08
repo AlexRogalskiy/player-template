@@ -1,0 +1,82 @@
+.musicFolder{
+    width: 20%;
+    height: 100%;
+}
+
+.smallWindow{
+    width: 100%;
+    height: 69px;
+    background: #fff;
+    cursor: pointer;
+    border-top: 1px solid #cebaba;
+    position: relative;
+}
+
+.folderList{
+    width: 100%;
+    background: #fff;
+    height: 430px;
+}
+
+.folderList .intro{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.folderList .paiHangBang{
+    background: #fff;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: grey;
+    border-left: 3px solid #fff;
+    font-size: 13px;
+}
+
+.folderList .paiHangBang:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.folderList .selected{
+    background: #f1efef;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: #272525;
+    border-left: 3px solid #e6245a;
+}
+
+.smallWindow img{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.smallWindow span{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 6px;
+    width: 55%;
+    font-size: 12px;
+    overflow: hidden;
+    height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.fa-expand{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    color: #d0cdcd;
+    top: 0;
+    left: 0;
+    font-size: 65px;
+    margin: 3px;
+    opacity: 0.8;
+}

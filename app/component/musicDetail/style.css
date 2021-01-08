@@ -1,0 +1,93 @@
+.musicDetail{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 500px;
+    background: #b5b3b3;
+    display: none;
+}
+
+.detailHeader i{
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    margin: 27px;
+    background: #b5b3b3;
+    color: #969090;
+    border: 1px solid #a5a0a0;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.detailHeader i:hover{
+    background: #fff;
+}
+
+.detailContent{
+    position: relative;
+}
+
+.detailContent .musicImg{
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+    border-radius: 200px;
+    float: left;
+    animation: imageRotate 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 40px solid #3a3838;
+}
+
+.detailContent .musicBar{
+    position: absolute;
+    top: 33px;
+    left: 212px;
+    width: 17%;
+    transform: rotate(50deg);
+}
+
+@keyframes imageRotate{
+   0% {transform: rotate(0deg);}
+   50% {transform: rotate(180deg);}
+   100% {transform: rotate(360deg);}
+}
+
+.detailName{
+    height: 94px;
+    width: 38%;
+    float: left;
+    top: 28px;
+    position: absolute;
+    right: 88px;
+    font-size: 13px;
+}
+
+.detailName span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.detailLyric{
+    height: 352px;
+    width: 47%;
+    float: left;
+    overflow: auto;
+    position: absolute;
+    right: 27px;
+    top: 113px;
+    font-size: 15px;
+}
+
+.detailLyric p{
+    margin: 10px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

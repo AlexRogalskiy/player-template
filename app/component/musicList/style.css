@@ -1,0 +1,139 @@
+.musicList{
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    border-left: 1px solid #ded7d7;
+    overflow: auto;
+}
+
+.musicList li{
+    list-style-type: none;
+    height: 31px;
+    line-height: 30px;
+    display: flex;
+    color: #808080;
+    position: relative;
+}
+
+.musicTitle{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.musicTitle span{
+    border-bottom: 1px solid #d0d0d0;
+    width: 25%;
+    /*padding-left: 10px;*/
+}
+
+.listItem {
+    /*overflow: auto;*/
+    /*height: 465px;*/
+}
+
+.listItem li span{
+    width: 25%;
+    font-size: 12px;
+    padding-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.listItem .row1{
+    background: #fbfbfb;
+}
+
+.listItem li:hover{
+    background: #f1efef;
+    cursor: pointer;
+    color: #000;
+}
+
+.listItem .selected{
+    background: #efe8e8 !important;
+    color: #000;
+}
+
+.fa-headphones{
+    line-height: 30px;
+    display: inline-block;
+    margin-left: 5px;
+    color: #e6245a;
+    animation: listenning;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes listenning{
+    0% {color: orangered}
+    20% {color: limegreen}
+    40% {color: blueviolet}
+    60% {color: yellow}
+    80% {color: deepskyblue}
+    100% {color: pink}
+}
+
+.addToLove{
+    position: absolute;
+    left: 28px;
+    top: 9px;
+    font-size: 12px;
+}
+
+.addToLove:hover{
+    color: #e6245a;
+}
+
+.addToLove.loved{
+    display: none;
+}
+
+.fa-trash{
+    position: absolute;
+    left: 28px;
+    top: 9px;
+}
+
+.pagination{
+    display: flex;
+    height: 30px;
+    /* background: red; */
+    padding-top: 30px;
+    width: 63%;
+    margin-bottom: 30px;
+    /*margin-left: 175px;*/
+}
+
+.pagination li{
+    width: 25px;
+    background: #cccccc;
+    list-style-type: none;
+    height: 25px;
+    margin-left: 10px;
+    line-height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.pagination li:hover{
+    background: #ff6a93;
+    color: #fff;
+}
+
+.pagination .current{
+    background: #e6245a !important;
+    color: #fff;
+}
+
+.songName{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
